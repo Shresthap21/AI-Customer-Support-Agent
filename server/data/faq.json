@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "How do I reset my password?",
+    "answer": "Go to the login page and click 'Forgot Password'. Enter your registered email address and follow the instructions sent to your inbox."
+  },
+  {
+    "id": 2,
+    "question": "How do I upgrade my plan?",
+    "answer": "Go to Settings > Billing and select 'Upgrade Plan'. Choose your preferred plan and complete the payment."
+  },
+  {
+    "id": 3,
+    "question": "How do I generate an API key?",
+    "answer": "Go to Settings > Developer Settings and click 'Generate API Key'. Keep your API key secure and never share it publicly."
+  },
+  {
+    "id": 4,
+    "question": "Can I cancel my subscription?",
+    "answer": "Yes. Go to Settings > Billing > Manage Subscription and select 'Cancel Subscription'."
+  },
+  {
+    "id": 5,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept major credit and debit cards including Visa, Mastercard, and American Express."
+  },
+  {
+    "id": 6,
+    "question": "How do I invite a team member?",
+    "answer": "Go to Settings > Team and click 'Invite Member'. Enter their email address and select their role."
+  },
+  {
+    "id": 7,
+    "question": "How do I change my email address?",
+    "answer": "Go to Settings > Account and update your email address under Account Information."
+  },
+  {
+    "id": 8,
+    "question": "Where can I view my invoices?",
+    "answer": "Go to Settings > Billing > Invoices to view and download your previous invoices."
+  }
+]
