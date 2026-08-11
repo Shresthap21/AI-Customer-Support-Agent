@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Tickets from "./Tickets";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
   ]);
 
   const [loading, setLoading] = useState(false);
+
+  if (window.location.pathname === "/tickets") {
+  return <Tickets />;
+}
 
   const sendMessage = async () => {
     if (!message.trim() || loading) return;
