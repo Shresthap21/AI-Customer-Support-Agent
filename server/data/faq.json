@@ -1,42 +1,58 @@
 [
   {
     "id": 1,
-    "question": "How do I reset my password?",
-    "answer": "Go to the login page and click 'Forgot Password'. Enter your registered email address and follow the instructions sent to your inbox."
+    "title": "API Authentication",
+    "question": "How do I authenticate API requests?",
+    "answer": "API requests require a valid API key. Send the key in the Authorization header using the Bearer scheme: Authorization: Bearer YOUR_API_KEY. You can generate an API key from the Developer Settings section of your account.",
+    "category": "API"
   },
   {
     "id": 2,
-    "question": "How do I upgrade my plan?",
-    "answer": "Go to Settings > Billing and select 'Upgrade Plan'. Choose your preferred plan and complete the payment."
+    "title": "API Rate Limits",
+    "question": "Why am I getting a 429 error?",
+    "answer": "HTTP 429 means the API rate limit has been exceeded. Reduce the request frequency and implement retry logic with exponential backoff. Avoid sending repeated requests immediately after receiving a 429 response.",
+    "category": "API"
   },
   {
     "id": 3,
-    "question": "How do I generate an API key?",
-    "answer": "Go to Settings > Developer Settings and click 'Generate API Key'. Keep your API key secure and never share it publicly."
+    "title": "Webhook Setup",
+    "question": "How do I configure a webhook?",
+    "answer": "Create a webhook endpoint in your application that accepts POST requests, then add its HTTPS URL in the Webhooks section of the dashboard. Your endpoint should return a successful 2xx response after processing the event.",
+    "category": "Integrations"
   },
   {
     "id": 4,
-    "question": "Can I cancel my subscription?",
-    "answer": "Yes. Go to Settings > Billing > Manage Subscription and select 'Cancel Subscription'."
+    "title": "Webhook Failures",
+    "question": "Why is my webhook failing?",
+    "answer": "Check that your webhook URL is publicly accessible over HTTPS and that your endpoint accepts POST requests. Also verify that your server returns a 2xx response and responds within the expected timeout.",
+    "category": "Integrations"
   },
   {
     "id": 5,
-    "question": "What payment methods do you accept?",
-    "answer": "We accept major credit and debit cards including Visa, Mastercard, and American Express."
+    "title": "API Key Management",
+    "question": "Where can I create or manage API keys?",
+    "answer": "API keys can be created and managed from the Developer Settings section of the dashboard. Keep API keys private and store them in environment variables rather than hard-coding them in application source code.",
+    "category": "Security"
   },
   {
     "id": 6,
-    "question": "How do I invite a team member?",
-    "answer": "Go to Settings > Team and click 'Invite Member'. Enter their email address and select their role."
+    "title": "SDK Setup",
+    "question": "How do I set up the SDK?",
+    "answer": "Install the SDK using your package manager, initialize it with your API key, and then use the provided client methods to make API requests. Keep the API key in an environment variable and never expose it in frontend code.",
+    "category": "Development"
   },
   {
     "id": 7,
-    "question": "How do I change my email address?",
-    "answer": "Go to Settings > Account and update your email address under Account Information."
+    "title": "401 Authentication Error",
+    "question": "Why am I getting a 401 unauthorized error?",
+    "answer": "A 401 response usually means the API key is missing, invalid, expired, or being sent in the wrong format. Verify that the Authorization header uses the Bearer scheme and that the correct key is being loaded by your application.",
+    "category": "API"
   },
   {
     "id": 8,
-    "question": "Where can I view my invoices?",
-    "answer": "Go to Settings > Billing > Invoices to view and download your previous invoices."
+    "title": "400 Bad Request",
+    "question": "Why am I getting a 400 bad request error?",
+    "answer": "A 400 response means the server could not process the request because the request data is invalid or incomplete. Check the request body, required parameters, parameter types, and endpoint being used.",
+    "category": "Troubleshooting"
   }
 ]
