@@ -5,7 +5,7 @@ const router = express.Router();
 const tickets = [];
 
 router.post("/", (req, res) => {
-  const { message } = req.body;
+  const { message, category = "Technical Issue" } = req.body;
 
   if (!message) {
     return res.status(400).json({
@@ -16,6 +16,7 @@ router.post("/", (req, res) => {
   const ticket = {
     id: tickets.length + 1001,
     issue: message,
+    category,
     priority: "Medium",
     status: "Open",
     createdAt: new Date().toISOString()
